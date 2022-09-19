@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 97f123533ed014d499e713a3788e8bc6
+guid: 537d9a9637235dc4c96de736b10172d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7932974095391238552
-    second: Octo1_0
+      213: 6077181209555686790
+    second: BigMan1_0
   - first:
-      213: -139746747655147034
-    second: Octo1_1
+      213: 292724059241909046
+    second: BigMan1_1
   - first:
-      213: -3728991933826805612
-    second: Octo1_2
-  - first:
-      213: -7060809306461405872
-    second: Octo1_3
+      213: -2623833883621445962
+    second: BigMan1_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Octo1_0
+      name: BigMan1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,41 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 899ab28b8e5971e60800000000000000
-      internalID: 7932974095391238552
+      spriteID: 685de3f9c1c765450800000000000000
+      internalID: 6077181209555686790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Octo1_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e1bf7bc2158f0ef0800000000000000
-      internalID: -139746747655147034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Octo1_2
+      name: BigMan1_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 490d4fdd795ff3cc0800000000000000
-      internalID: -3728991933826805612
+      spriteID: 63b03502bf6ff0400800000000000000
+      internalID: 292724059241909046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Octo1_3
+      name: BigMan1_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05d78957857f20e90800000000000000
-      internalID: -7060809306461405872
+      spriteID: 6be2c190cf4469bd0800000000000000
+      internalID: -2623833883621445962
       vertices: []
       indices: 
       edges: []
