@@ -9,6 +9,9 @@ public class BulletSelfDestroy : MonoBehaviour
 
     public int collisionCount = 0;
 
+    
+
+
     void OnCollisionEnter2D(Collision2D col)
     {
         collisionCount++;
@@ -20,11 +23,14 @@ public class BulletSelfDestroy : MonoBehaviour
         }
         
         // log to console
-        Debug.Log("Collision Count: " + collisionCount);
         // increment the animator parameter bounce
         GetComponent<Animator>().SetInteger("bounce", collisionCount);
 
-
+        // if the bullet collides with enemy, destroy enemy
+        if (col.gameObject.tag == "smallEnemy")
+        {
+            Destroy(col.gameObject);
+        }
 
         
 

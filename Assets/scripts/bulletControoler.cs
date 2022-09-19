@@ -9,6 +9,12 @@ public class bulletControoler : MonoBehaviour
      public Rigidbody2D bullet;
     // Start is called before the first frame update
     
+     public float FireRate = 2;  // The number of bullets fired per second
+     public float lastfired;  
+    void Start()
+    {
+        
+    }
 
     void FireBullet(){
 
@@ -32,8 +38,14 @@ public class bulletControoler : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space)){
-            FireBullet();
+        if (Input.GetButton("Fire1")){
+            
+            if (Time.time - lastfired > 1 / FireRate)
+            {
+                lastfired = Time.time;
+                FireBullet();
+            }
+
         }
     }
 }
