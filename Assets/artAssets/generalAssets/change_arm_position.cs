@@ -49,7 +49,7 @@ public class change_arm_position : MonoBehaviour
             }
             else if (point == 2)
             {
-                return;
+                Application.LoadLevel("LeaderBoard");
             }
             else if (point == 3)
             {
