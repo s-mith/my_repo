@@ -36,6 +36,16 @@ public class Movement1 : MonoBehaviour
             GetComponent<Animator>().SetBool("walking", false);
         }
         
+
+        // if the mouse is to the left of the player, flip the player
+        if (Input.mousePosition.x < Camera.main.WorldToScreenPoint(transform.position).x)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
  
  
         // Try out this delta time method??
