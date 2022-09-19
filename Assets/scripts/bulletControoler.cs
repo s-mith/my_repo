@@ -43,9 +43,16 @@ public class bulletControoler : MonoBehaviour
             if (Time.time - lastfired > 1 / FireRate)
             {
                 lastfired = Time.time;
+                GetComponent<Animator>().SetBool("shooting", true);
                 FireBullet();
             }
 
+        }
+        // if its been 4 seconds since you fired set 
+        if (Time.time - lastfired > 4)
+        {
+            // set animator bool shooting to false
+            GetComponent<Animator>().SetBool("shooting", false);
         }
     }
 }

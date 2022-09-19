@@ -35,6 +35,8 @@ public class Movement1 : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("walking", false);
         }
+
+        
         
 
         // if the mouse is to the left of the player, flip the player

@@ -42,6 +42,11 @@ public class healthController : MonoBehaviour
                 }
             }
         }
+        if (health <= 0)
+        {
+            // go to game over scene
+            Application.LoadLevel("LeaderBoard");
+        }
 
         
         
