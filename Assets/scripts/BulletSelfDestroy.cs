@@ -9,40 +9,28 @@ public class BulletSelfDestroy : MonoBehaviour
 
     public int collisionCount = 0;
 
+    
+
+
     void OnCollisionEnter2D(Collision2D col)
     {
         collisionCount++;
-        if (collisionCount >= 5)
+        if (collisionCount > 5)
         {
+
             Destroy(gameObject);
+            
         }
         
-        if (collisionCount == 1)
-        {
-            // change the color of the bullet to light yellow
-            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 0.5f, 1f);
-        }
-        else if (collisionCount == 2)
-        {
-            // change the color of the bullet to light orange
-            GetComponent<SpriteRenderer>().color = new Color(1f, 0.5f, 0.1f, 1f);
-        }
-        else if (collisionCount == 3)
-        {
-            // change the color of the bullet to light red
-            GetComponent<SpriteRenderer>().color = new Color(1f, 0.3f, 0.3f, 1f);
-        }
-        else if (collisionCount == 4)
-        {
-            // change the color of the bullet to light pink
-            GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
-        }
-        else if (collisionCount == 5)
-        {
-            // change the color of the bullet to light purple
-            GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 0.5f);
-        }
+        // log to console
+        // increment the animator parameter bounce
+        GetComponent<Animator>().SetInteger("bounce", collisionCount);
 
+        // if the bullet collides with enemy, destroy enemy
+        if (col.gameObject.tag == "smallEnemy")
+        {
+            Destroy(col.gameObject);
+        }
 
         
 
