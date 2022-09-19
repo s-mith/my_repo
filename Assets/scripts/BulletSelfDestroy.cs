@@ -12,14 +12,18 @@ public class BulletSelfDestroy : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         collisionCount++;
-        if (collisionCount >= 5)
+        if (collisionCount > 5)
         {
+
             Destroy(gameObject);
+            
         }
         
-        
+        // log to console
+        Debug.Log("Collision Count: " + collisionCount);
         // increment the animator parameter bounce
         GetComponent<Animator>().SetInteger("bounce", collisionCount);
+
 
 
         
