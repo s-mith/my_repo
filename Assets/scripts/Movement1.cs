@@ -29,11 +29,11 @@ public class Movement1 : MonoBehaviour
         // when moving animate
         if (moveHorizontal != 0 || moveVertical != 0)
         {
-            GetComponent<Animator>().SetBool("isWalking", true);
+            GetComponent<Animator>().SetBool("walking", true);
         }
         else
         {
-            GetComponent<Animator>().SetBool("isWalking", false);
+            GetComponent<Animator>().SetBool("walking", false);
         }
         
  
